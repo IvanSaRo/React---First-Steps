@@ -9,10 +9,13 @@ const objeto = {
 }
 
 
-const FirstApp = () => {
+const FirstApp = ( {saludo1 = 'Hola gente'} ) => {
+
+    
   return (
     <>
       <h1>{saludo}</h1>
+      <h2>{ saludo1 }</h2>
       <p> {JSON.stringify(objeto)}</p>
       <pre> {JSON.stringify(objeto, null, 3)}</pre>
       <p> First App</p>

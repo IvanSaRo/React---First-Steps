@@ -8,4 +8,4 @@ import './index.css';
 const divRoot = document.querySelector('#root');
 
 
-ReactDom.render( <FirstApp />, divRoot);
+ReactDom.render( <FirstApp saludo1="Hola soy  Ivan"/>, divRoot);
