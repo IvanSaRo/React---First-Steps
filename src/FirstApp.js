@@ -32,3 +32,4 @@ FirstApp.defaultProps = {
     subtitle: 'Soy un subtitulo'
 }
 export default FirstApp;
+
