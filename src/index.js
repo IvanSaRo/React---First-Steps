@@ -9,5 +9,5 @@ import './index.css';
 const divRoot = document.querySelector('#root');
 
 
-// ReactDom.render( <FirstApp saludo1="Hola soy  Ivan"/>, divRoot);
-ReactDom.render( <CounterApp value={20}/>, divRoot);
+ReactDom.render( <FirstApp saludo1="Hola, soy Iván"/>, divRoot);
+// ReactDom.render( <CounterApp value={20}/>, divRoot);
