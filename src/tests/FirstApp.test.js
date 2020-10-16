@@ -8,17 +8,17 @@ describe("Pruebas en FirstApp", () => {
     const saludo = "Hola, soy Iván";
     const wrapper = shallow(<FirstApp saludo={saludo} />);
 
-    expect(wrapper).toMatchSnapshot(); /*  */
+    expect(wrapper).toMatchSnapshot(); 
   });
 
   test('Debe mostrar el subtitulo enviado por props', () => {
     const saludo = "Hola, soy Iván";
-    const subTitle = "Soy un subtitulo";
+    const subTitle ="Soy un subtitulo";
     
     const wrapper = shallow(
         <FirstApp 
             saludo={saludo} 
-            subtitle= {subTitle}
+            subtitle={subTitle}
         />
     );
     

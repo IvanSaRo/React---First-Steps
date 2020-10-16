@@ -14,7 +14,7 @@ const FirstApp = ( {saludo, subtitle}  /* = 'Soy un subtitulo' */ ) => {
       
       <h2> {saludo} </h2>
      
-      <p> {subtitle}</p>
+      <p>{subtitle}</p>
     </>
   );
 };
