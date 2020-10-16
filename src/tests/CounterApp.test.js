@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import CounterApp from "../CounterApp";
 
 describe("Pruebas en CounterApp", () => {
-  let wrapper = shallow(<CounterApp />);//lo inicializo aquí para no perder la ayuda de VS
+  let wrapper = shallow(<CounterApp />); //lo inicializo aquí para no perder la ayuda de VS
 
   beforeEach(() => {
     wrapper = shallow(<CounterApp />);
@@ -38,5 +38,15 @@ describe("Pruebas en CounterApp", () => {
     const textoh2 = wrapper.find("h2").text().trim();
 
     expect(textoh2).toBe("9");
+  });
+
+  test("El botón reset ha de colocar el valor por defecto", () => {
+    const wrapper = shallow(<CounterApp value={200} />);
+
+    wrapper.find("button").at(2).simulate("click");
+    wrapper.find("button").at(1).simulate("click");
+    const textoh2 = wrapper.find("h2").text().trim();
+
+    expect(textoh2).toBe('200');
   });
 });
